@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently asked questions</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/header.css">
+   
+    
+</head>
+
+<style>
+    
+
+    /* styling for accordion */
+    .faq {
+        min-height: 80vh;
+        margin-top: 60px;
+    }
+    #accordion {
+        display: block;
+        margin: 100px auto;
+        width: 600px;
+        margin-top: 70px;
+
+    }
+    #accordion li {
+        list-style: none;
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: rgb(18, 18, 83);
+    }
+    #accordion li label {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        text-transform: capitalize;
+    }
+    #accordion li label span {
+        transform: rotate(90deg);
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+    }
+    #accordion label + input[type="radio"] {
+        display: none;  
+    }
+    #accordion .content {
+        padding: 0 10px;
+        overflow: hidden;
+        max-height: 0;
+        font-size: 26px;
+        transition: max-height 0.5s;
+    }
+    #accordion label + input[type="radio"]:checked + .content {
+        max-height: 400px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+        <div class="dropdown">
+            <button class="dropbtn">Menu<img src="img/1.cutout.png" alt="dropdown-icon"></span></button>
+            <div class="drop-content">
+                <a href="/">Blog</a>
+                <a href="/">Html/CSS</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button Class="dropbtn">Contact Us<img src="img/1.cutout.png" alt="dropdown-icon"></button>
+            <div class="drop-content" id="drop-content2">
+                <a href="about.html">about Us</a>
+                <a href="contact.html">Contact Us</a> 
+            </div>
+        </div>
+        
+    </header>
+
+<main class="faq">
+    <div style="display: block; margin-top: 80px;"><h1 style="text-align: center; margin-top: 50px; color: rgb(18, 18, 83);">Frequently Asked Questions</h1></div>
+    <ul id="accordion">
+        <li>
+            <label for="second">What is Temprature Converter <span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="second" >
+            <div class="content">
+                This temperature converter converts temperature to another you. Eg you can convert to fahrenheit to celcius and kelvin and vice versa  
+            </div>
+        </li>
+        <li>
+            <label for="third">How does the Temperature Converter work<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="third" >
+            <div class="content">
+                the temperature converter works by converting the unit you enter into the other two unit automatically and seamlessly. for example if you input a number in fahrenheit it convert it to celcius and kelvin
+            </div>
+        </li>
+        <li>
+            <label for="fourth">how to navigate this website <span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="fourth" >
+            <div class="content">
+                you can hover around the menu at the header navigation and go to any link you want to or you can go to the footer to see all the navigation
+            </div>
+        </li>
+    </ul>
+</main>
+<footer>
+        
+    <div class="footer-navigation">
+        <ul style="display: block; text-decoration: none; gap: 5px;">
+            <li><a href="/">Temprature Converter</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        
+        
+    </div>
+    <div class="contact">
+        <p>Phone </p>
+        <a href="tel:+2347053422577">7053422577</a>
+        <p>Email</p>
+        <a href="mailto:emmanueljonathan113@gmail.com">emmanueljonathan113@gmail.com</a>
+        <p>Address</p>
+        <address>Madalla Niger State, Nigeria</address>
+    </div>
+    <div class="sm">
+        <div><p>follow @</p></div>
+        <div class="sm-icon">
+            <a href="wwww.facebook.com"><div class="fb"></div></a>
+            <a href="wwww.instagram.com"><div class="ins"></div></a>
+            <a href="#"><div class="x"></div></a>
+            <a href=""><div class="link"></div></a>
+        </div>
+        
+    </div>
+</footer>

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* styling for the header */
+header {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(18, 18, 83);
+    display: flex;
+    gap: 10px;
+    
+}
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#drop-content2 {
+    min-width: 100px;
+}
+.dropdown{
+    float: left;
+    display: inline;
+    position: relative;
+    margin-top: 27px;
+}
+/* styling for the button */
+.dropbtn{
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+}
+/* span{
+    font-size: 15px;
+    color: rgb(228, 211, 211);
+} */
+
+.drop-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+header nav a {
+    text-decoration: none;
+    display: block;
+    line-height: 60px;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 12px;
+    font-weight: 500;
+}
+header nav, div, button {
+    margin-left: 5px;
+}
+.drop-content a:hover {
+    background-color: grey;
+    transition-property: background-color;
+    transition-delay: .02s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.dropdown:hover .drop-content {
+    display: block;
+    border-radius: 5px;
+    background-color: rgb(18, 18, 83);
+    transition-property: background-color;
+    transition-delay: .02s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+

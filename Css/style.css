@@ -1,0 +1,352 @@
+/* this code resets the page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+}
+body:after {
+    position: absolute;
+    content: url(../img/fb-color.png) url(../img/inst-cutout.png)url(../img/link-color.png)url(../img/x-color.png);
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    z-index: -1;
+}
+header {
+    height: 50px; 
+    position: fixed;
+    top: 0;  
+}
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+ul li a {
+    display: block;
+    /* height: 100%;
+    margin: 4px;
+    margin-top: 20px; */
+    text-decoration: none;
+
+}
+
+section .head {
+    height: 70px;
+    width: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: px 400px 0;
+
+}
+
+section .head h1 {
+    line-height: 70px;
+    
+
+}
+
+.main-container {
+    min-height: 80vh;
+    background-color: #fff;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.main-container .head {
+    margin-top: 70px;
+}
+
+.container {
+    border-radius: 8px;
+    height: 400px;
+    width: 40%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    margin: -1px 30%;
+    justify-self: center;
+}
+label {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+input {
+    width: 200px; 
+    height: 60px; 
+    background: white; 
+    border-radius: 5px; 
+    text-align: center; 
+    font-size: 20px;
+    font-weight: 400;
+    background-color: black;
+    color: whitesmoke;
+    
+}
+input, label {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+    padding-top: 0px;
+}
+input:hover {
+    background-color: lightgrey;
+    color: black;
+    cursor: pointer;transition-property: background-color;
+    transition-delay: .02s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+/* syling for footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    min-height: 60px;
+    width: 100%;
+    background-color: lightgrey;
+    color: rgb(18, 18, 83);
+}
+.sm {   
+    display: block;
+    margin-top: 25px;
+}
+.sm .sm-icon{
+    display: flex;
+    margin-top: 10px;
+} 
+.sm div p {
+    text-align: center;
+    font-size: 20px;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    margin-top: 30px;
+    margin-right: 150px;
+}
+.contact a{
+    text-decoration: none;
+}
+.footer-navigation a:hover, .footer-navigation a:active, .contact a:hover, .contacta:active{
+    color: black;
+    transition-property: background-color;
+    transition-delay: .02s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+.fb {
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/fb-black.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fb:hover {
+    background-image: url(../img/fb-color.png);
+    transition-delay: .02s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+.ins {
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/insta-black.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ins:hover {
+    background-image: url(../img/inst-cutout.png);
+    transition-delay: .02s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+.link {
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/link-black.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.link:hover {
+    background-image: url(../img/link-color.png);
+    transition-delay: .02s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+.x {
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/x-black.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.x:hover {
+    background-image: url(../img/x-color.png);
+    transition-delay: .02s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+.footer-navigation {
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: 25px;
+    
+}
+
+
+footer p, footer a {
+    color: rgb(18, 18, 83);
+    line-height: 23px;
+    font-size: 20px;
+}
+/* styling for about */
+
+fieldset {
+    min-height: 430px;
+    width: 400px;
+    border-color: rgb(18, 18, 83);
+    border-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    box-shadow: 0px 22px 44px 0px rgba(0,0,0,0.2);
+}
+fieldset label,fieldset input  {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-transform: capitalize;
+    
+}
+fieldset input {
+    height: 40px;
+    width: fit-content;
+    margin-left: 73px;
+}
+fieldset label, fieldset legend {
+    font-size: 23px;
+}
+fieldset button {
+    height: 30px;
+    width: 60px;
+    color: lightgrey;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn1{
+    margin-right: -110px;
+}
+fieldset button:hover {
+    background-color: grey;
+    color: black;
+    transition-property: background-color;
+    transition-delay: .02s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+textarea {
+    background-color: grey;
+    color: black;
+    font-size: 12px;
+    float: 30px;
+    border-bottom-right-radius: 7px;
+}
+textarea:hover, textarea:active{
+    background-color: #fff;
+    color: black;
+    transition-property: background-color;
+    transition-delay: .02s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.main-about {
+    margin-top: 40px;
+    height: 70vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+fieldset textarea, fieldset button{
+    margin-left: 80px;
+}
+.form{
+    margin-right: 40px;
+}
+.about-app {
+    margin-right: 0px;
+}
+.about-app p {
+    text-align: center;
+}
+.about-me p{
+ text-align: center;
+ margin-top: 10px;
+}
+.about-me h4{
+    text-align: center;
+}
+.about-me img {
+    align-self: center;
+    margin-left: 77px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+    body{
+        min-height: 100vh;
+        width: 500px;
+    }
+    .main-about{
+        display: block;
+    }
+    footer{
+        display: block;
+        margin-top: 1100px;
+        position: fixed;
+        bottom: 0;
+    }
+    .footer-navigation{
+        margin-left: 5px;
+    }
+    fieldset{
+        border: none;
+    }
+    .sm-icon{
+        margin-left: 30%;
+    }
+    h3{
+        text-align: start;
+    }
+    header{
+        background-color: red;
+    }
+    .head{
+        margin-right: 100px;
+    }
+    section .about-me{
+        margin-right: 550px;
+    }
+    .contact-section .main-about, .contact-section .sm{
+        display: none;
+    }
+    .contact-section .form{
+        display: block;
+        margin-right: 1000x;
+    }
+    .contact-section fieldset{
+        border: none;
+    }
+}
